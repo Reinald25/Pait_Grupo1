@@ -32,16 +32,14 @@ public class ventana1 extends JFrame {
 		});
 	}
 
-	/**
-	 * Create the frame.
-	 */
 	public ventana1() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		//mantiene a la ventana del mismo tamaño
 		this.setResizable(false);
 		//los 2 primeros parametros son posicion en pantalla
-		//los 2 ultimos parametros son dimension de ventana
-		setBounds(500, 100, 450, 283);
+		this.setSize(450, 283);
+		//coloca la pantalla en el centro
+		this.setLocationRelativeTo(null);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);

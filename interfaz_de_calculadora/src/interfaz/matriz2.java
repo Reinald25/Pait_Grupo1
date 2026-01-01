@@ -43,7 +43,8 @@ public class matriz2 extends JFrame {
 		setBackground(new Color(0, 255, 0));
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setResizable(false);
-		setBounds(500, 100, 342, 290);
+		this.setSize(342, 290);
+		this.setLocationRelativeTo(null);
 		getContentPane().setLayout(new BorderLayout());
 		contentPane = new JPanel();
 		contentPane.setBackground(new Color(64, 224, 208));

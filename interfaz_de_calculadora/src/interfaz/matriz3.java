@@ -51,7 +51,8 @@ public class matriz3 extends JFrame {
 	public matriz3() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setResizable(false);
-		setBounds(500, 100, 339, 337);
+		this.setSize(339, 337);
+		this.setLocationRelativeTo(null);
 		contentPane = new JPanel();
 		contentPane.setBackground(new Color(60, 179, 113));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));

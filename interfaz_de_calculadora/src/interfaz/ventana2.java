@@ -33,7 +33,8 @@ public class ventana2 extends JFrame {
 	public ventana2() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setResizable(false); 
-		setBounds(500, 100, 350, 200);
+		this.setSize(350, 200);
+		this.setLocationRelativeTo(null);
 		contentPane = new JPanel();
 		contentPane.setBackground(new Color(173, 255, 47));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
