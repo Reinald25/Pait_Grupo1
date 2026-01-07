@@ -20,6 +20,7 @@ public class primer extends JFrame {
 	private JTextField b;
 	private JTextField c;
 	private JTextField r;
+	private final JLabel lblNewLabel_3 = new JLabel("Primer grado");
 
 	/**
 	 * Launch the application.
@@ -100,6 +101,8 @@ public class primer extends JFrame {
 		});
 		btnNewButton.setBounds(189, 122, 84, 20);
 		contentPane.add(btnNewButton);
+		lblNewLabel_3.setBounds(166, 10, 98, 32);
+		contentPane.add(lblNewLabel_3);
 
 	}
 }
