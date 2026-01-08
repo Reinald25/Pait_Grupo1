@@ -81,6 +81,13 @@ public class ventana1 extends JFrame {
 		contentPane.add(lblNewLabel_1);
 		
 		JButton btnNewButton_1 = new JButton("Ecuaciones");
+		btnNewButton_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Ecuaciones ec = new Ecuaciones();
+				ec.setVisible(true);
+				ventana1.this.dispose();
+			}
+		});
 		btnNewButton_1.setBounds(10, 165, 143, 35);
 		contentPane.add(btnNewButton_1);
 
