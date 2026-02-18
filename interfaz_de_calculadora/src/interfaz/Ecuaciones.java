@@ -67,8 +67,8 @@ public class Ecuaciones extends JFrame {
 		JButton btnNewButton_1 = new JButton("Ir");
 		btnNewButton_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				primer M = new primer();
-				M.setVisible(true);
+				primer pr = new primer();
+				pr.setVisible(true);
 				Ecuaciones.this.dispose();
 			}
 		});

@@ -1,0 +1,6 @@
+Esta información esta reservada para el uso de la calculadora en general.
+Datos que se toman inválidos:
+1) La calculadora no acepta datos alfabéticos
+2) La calculadora no acepta fracciones como por ejemplo "1/2"
+3) No acepta comas ",", sino que para escribir decimales es recomendable el punto "."
+En el caso numero 2 es recomendable usar la calculadora básica para evitar errores.

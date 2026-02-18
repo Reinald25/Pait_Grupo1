@@ -5,24 +5,28 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
-import javax.swing.JTextField;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JTextField;
 import javax.swing.SwingConstants;
+import javax.swing.JComboBox;
+import javax.swing.DefaultComboBoxModel;
 import javax.swing.JButton;
+import java.awt.event.MouseWheelListener;
+import java.awt.event.MouseWheelEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import javax.swing.JTextArea;
 import java.awt.Font;
-import javax.swing.ImageIcon;
+import javax.swing.JScrollPane;
 
 public class primer extends JFrame {
 
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
-	private JTextField a;
-	private JTextField b;
-	private JTextField c;
-	private JTextField r;
-	private final JLabel lblNewLabel_3 = new JLabel("Primer grado");
+	private JTextField A;
+	private JTextField B;
+	private JTextField C;
 
 	/**
 	 * Launch the application.
@@ -45,119 +49,154 @@ public class primer extends JFrame {
 	 */
 	public primer() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		this.setResizable(false);
-		setSize(446, 307);
+		setSize(555, 374);
 		this.setLocationRelativeTo(null);
+		this.setResizable(false);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		a = new JTextField();
-		a.setHorizontalAlignment(SwingConstants.CENTER);
-		a.setBounds(21, 80, 96, 18);
-		contentPane.add(a);
-		a.setColumns(10);
-		
-		b = new JTextField();
-		b.setHorizontalAlignment(SwingConstants.CENTER);
-		b.setBounds(166, 80, 96, 18);
-		contentPane.add(b);
-		b.setColumns(10);
-		
-		c = new JTextField();
-		c.setBounds(308, 80, 96, 18);
-		contentPane.add(c);
-		c.setColumns(10);
-		
-		JLabel lblNewLabel = new JLabel("X");
-		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel.setBounds(112, 83, 44, 12);
+		JLabel lblNewLabel = new JLabel("Ecuaciones de Primer Grado");
+		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblNewLabel.setBounds(150, 11, 193, 44);
 		contentPane.add(lblNewLabel);
 		
-		JLabel lblNewLabel_1 = new JLabel("+");
-		lblNewLabel_1.setBounds(145, 83, 44, 12);
+		A = new JTextField();
+		A.setHorizontalAlignment(SwingConstants.CENTER);
+		A.setText("0");
+		A.setBounds(29, 91, 79, 20);
+		contentPane.add(A);
+		A.setColumns(10);
+		
+		JLabel lblNewLabel_1 = new JLabel("Ax");
+		lblNewLabel_1.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel_1.setBounds(48, 66, 46, 14);
 		contentPane.add(lblNewLabel_1);
 		
-		JLabel lblNewLabel_2 = new JLabel("=");
-		lblNewLabel_2.setBounds(272, 83, 44, 12);
+		JLabel lblNewLabel_2 = new JLabel("B");
+		lblNewLabel_2.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel_2.setBounds(178, 66, 46, 14);
 		contentPane.add(lblNewLabel_2);
 		
-		r = new JTextField();
-		r.setHorizontalAlignment(SwingConstants.CENTER);
-		r.setBounds(133, 174, 171, 31);
-		contentPane.add(r);
-		r.setColumns(10);
+		B = new JTextField();
+		B.setHorizontalAlignment(SwingConstants.CENTER);
+		B.setText("0");
+		B.setBounds(174, 91, 86, 20);
+		contentPane.add(B);
+		B.setColumns(10);
+		
+		C = new JTextField();
+		C.setHorizontalAlignment(SwingConstants.CENTER);
+		C.setText("0");
+		C.setBounds(298, 91, 86, 20);
+		contentPane.add(C);
+		C.setColumns(10);
+		
+		JLabel lblNewLabel_3 = new JLabel("C");
+		lblNewLabel_3.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel_3.setBounds(318, 66, 46, 14);
+		contentPane.add(lblNewLabel_3);
+		
+		JLabel lblNewLabel_4 = new JLabel("=");
+		lblNewLabel_4.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel_4.setBounds(256, 94, 46, 14);
+		contentPane.add(lblNewLabel_4);
+		
+		JComboBox comboBox = new JComboBox();
+		comboBox.setEditable(true);
+		comboBox.setBounds(118, 90, 46, 22);
+		contentPane.add(comboBox);
+		comboBox.addItem(" +");
+		comboBox.addItem(" -");
+		
+		JScrollPane scrollPane = new JScrollPane();
+		scrollPane.setBounds(29, 166, 355, 158);
+		contentPane.add(scrollPane);
+		JTextArea Respuesta = new JTextArea();
+		Respuesta.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		scrollPane.setViewportView(Respuesta);
+		Respuesta.setEditable(false);
 		
 		JButton btnNewButton = new JButton("Calcular");
+		btnNewButton.setFont(new Font("Tahoma", Font.PLAIN, 11));
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
-				float i =-1;
-				float A= Float.parseFloat(a.getText());
-				float B= Float.parseFloat(b.getText());
-				float C= Float.parseFloat(c.getText());
-				String a1 = a.getText().trim();
-				String b1 = b.getText().trim();
-				String c1 = c.getText().trim();
-				if (a1.isBlank() && b1.isBlank() && c1.isBlank()) {
-					r.setText("Llenar los espacios");
+				try {
+					float a = Float.parseFloat(A.getText());
+				float b = Float.parseFloat(B.getText());
+				float c = Float.parseFloat(C.getText());
+				String signo = (String) comboBox.getSelectedItem();
+					if (a==0) {
+					String res ="No es posible que Ax este en 0";
+					Respuesta.setText(res);
+				}else {
+					switch(signo) {
+					case (" +"):
+						float d = (c-b)/a;
+					    String r = "Pasos \n"+a+"x"+"+"+b+"="+c+"\n"+a+"x="+c+"-"+b+
+					    		"\n"+"x="+(c-b)+"/"+a+"\nx="+d;
+					    Respuesta.setText(r);
+						break;
+					case (" -"):
+						float dn = (c+b)/a;
+					String rn = "Pasos \n"+a+"x"+"-"+b+"="+c+"\n"+a+"x="+c+"+"+b+
+				    		"\n"+"x="+(c+b)+"/"+a+"\nx="+dn;
+				    Respuesta.setText(rn);
+						break;
+					}
 				}
-				if(A==0) {
-					String negacion = "No es posible tener x en 0";
-					r.setText(negacion);
+					
+				}catch(NumberFormatException e1) {
+					JOptionPane.showMessageDialog(null, "Acción inválida");
 				}
-				if (A==0 && B==0 && C==0) {
-					String nada = "Porfavor llenar con datos";
-					r.setText(nada);
-				}
-				if(A!=0) {
-					float g =(B*i);
-				float h=C+g;
-				float d=h/A;
-				String respuesta = "X= "+d;
-				r.setText(respuesta);
-				}
-				
-				
 				
 				
 			}
 		});
-		btnNewButton.setBounds(104, 132, 84, 20);
+		btnNewButton.setBounds(161, 132, 89, 23);
 		contentPane.add(btnNewButton);
-		lblNewLabel_3.setFont(new Font("Tahoma", Font.PLAIN, 16));
-		lblNewLabel_3.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_3.setBounds(164, 11, 98, 32);
-		contentPane.add(lblNewLabel_3);
 		
-		JButton btnNewButton_1 = new JButton("Atrás");
+		JButton btnNewButton_1 = new JButton("Limpiar");
+		btnNewButton_1.setFont(new Font("Tahoma", Font.PLAIN, 11));
 		btnNewButton_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				Ecuaciones ec = new Ecuaciones();
-				ec.setVisible(true);
-				primer.this.dispose();
+				A.setText("0");
+				B.setText("0");
+				C.setText("0");
+				Respuesta.setText("");
 			}
 		});
-		btnNewButton_1.setBounds(28, 222, 89, 23);
+		
+		
+		btnNewButton_1.setBounds(429, 85, 100, 23);
 		contentPane.add(btnNewButton_1);
-		
-		JButton btnNewButton_2 = new JButton("Limpiar");
-		btnNewButton_2.addActionListener(new ActionListener() {
+		JButton calcu = new JButton("Calculadora");
+		calcu.setFont(new Font("Tahoma", Font.PLAIN, 10));
+		calcu.setHorizontalAlignment(SwingConstants.LEFT);
+		calcu.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				a.setText("");
-				b.setText("");
-				c.setText("");
-				r.setText("");
+				calculadora cl = new calculadora();
+				cl.setVisible(true);
 			}
 		});
-		btnNewButton_2.setBounds(227, 129, 89, 23);
-		contentPane.add(btnNewButton_2);
+		calcu.setBounds(429, 132, 100, 23);
+		contentPane.add(calcu);
 		
-		JLabel lblNewLabel_4 = new JLabel("");
-		lblNewLabel_4.setIcon(new ImageIcon(primer.class.getResource("/imagen/snaplytics_converted_gif.gif")));
-		lblNewLabel_4.setBounds(0, 0, 430, 268);
-		contentPane.add(lblNewLabel_4);
+		JButton btnNewButton_3 = new JButton("Info.");
+		btnNewButton_3.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				info i = new info();
+				i.setVisible(true);
+			}
+		});
+		btnNewButton_3.setFont(new Font("Tahoma", Font.PLAIN, 11));
+		btnNewButton_3.setBounds(429, 181, 100, 23);
+		contentPane.add(btnNewButton_3);
+		
+		
+		
 
 	}
 }

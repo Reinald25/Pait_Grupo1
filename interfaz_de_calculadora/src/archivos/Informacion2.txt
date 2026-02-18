@@ -1,0 +1,6 @@
+Información sobre la calculadora básica
+La calculadora básica funciona para casos varios.
+De igual forma se recuerda
+1) La calculadora básica no acepta datos alfabéticos
+2) La calculadora básica no acepta fracciones como por ejemplo "1/2"
+3) No acepta comas ",", sino que para escribir decimales es recomendable el punto "."
