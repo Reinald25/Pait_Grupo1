@@ -34,10 +34,12 @@ public class menu extends JFrame {
 
 	public menu() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		//Coloca titulo
+		this.setTitle("Menú");
 		//mantiene a la ventana del mismo tamaño
 		this.setResizable(false);
 		//los 2 primeros parametros son posicion en pantalla
-		this.setSize(477, 283);
+		this.setSize(477, 289);
 		//coloca la pantalla en el centro
 		this.setLocationRelativeTo(null);
 		contentPane = new JPanel();
@@ -51,14 +53,14 @@ public class menu extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				//atributos y metodos que tendra el boton
 				//instancia una clase
-				ventana2 v2 = new ventana2();
+				matrices v2 = new matrices();
 				//metodo que abre una ventana en especifico 
 				v2.setVisible(true);
 				//el metodo hace que esta ventana se cierre al abrir la anterior
 				menu.this.dispose();
 				}
 		});
-		btnNewButton.setBounds(42, 127, 93, 29);
+		btnNewButton.setBounds(42, 116, 93, 19);
 		contentPane.add(btnNewButton);
 		
 		JLabel lblNewLabel = new JLabel("Calculadora Algebraica ");
@@ -74,7 +76,7 @@ public class menu extends JFrame {
 				menu.this.dispose();
 			}
 		});
-		btnFigurasGeometricas.setBounds(42, 71, 93, 29);
+		btnFigurasGeometricas.setBounds(42, 71, 93, 19);
 		contentPane.add(btnFigurasGeometricas);
 		
 		JLabel lblNewLabel_1 = new JLabel("");
@@ -90,22 +92,41 @@ public class menu extends JFrame {
 				menu.this.dispose();
 			}
 		});
-		btnNewButton_1.setBounds(42, 186, 93, 29);
+		btnNewButton_1.setBounds(42, 162, 93, 19);
 		contentPane.add(btnNewButton_1);
 		
 		JLabel lblNewLabel_2 = new JLabel("Ecuaciones 1er y 2do grado");
+		lblNewLabel_2.setFont(new Font("Times New Roman", Font.PLAIN, 12));
 		lblNewLabel_2.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_2.setBounds(10, 167, 172, 19);
+		lblNewLabel_2.setBounds(22, 146, 160, 19);
 		contentPane.add(lblNewLabel_2);
 		
 		JLabel lblNewLabel_3 = new JLabel("Sistemas de ecuaciones");
-		lblNewLabel_3.setBounds(32, 111, 143, 14);
+		lblNewLabel_3.setFont(new Font("Times New Roman", Font.PLAIN, 12));
+		lblNewLabel_3.setBounds(42, 101, 133, 14);
 		contentPane.add(lblNewLabel_3);
 		
 		JLabel lblNewLabel_4 = new JLabel("Figuras geometricas");
+		lblNewLabel_4.setFont(new Font("Times New Roman", Font.PLAIN, 12));
 		lblNewLabel_4.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_4.setBounds(23, 57, 133, 14);
+		lblNewLabel_4.setBounds(27, 57, 133, 14);
 		contentPane.add(lblNewLabel_4);
+		
+		JLabel lblNewLabel_2_1 = new JLabel("Información");
+		lblNewLabel_2_1.setFont(new Font("Times New Roman", Font.PLAIN, 12));
+		lblNewLabel_2_1.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel_2_1.setBounds(10, 187, 154, 19);
+		contentPane.add(lblNewLabel_2_1);
+		
+		JButton btnNewButton_1_1 = new JButton("Ir");
+		btnNewButton_1_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				info i = new info();
+				i.setVisible(true);
+			}
+		});
+		btnNewButton_1_1.setBounds(42, 204, 93, 19);
+		contentPane.add(btnNewButton_1_1);
 
 	}
 }

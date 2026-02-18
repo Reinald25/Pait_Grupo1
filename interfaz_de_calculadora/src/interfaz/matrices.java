@@ -12,7 +12,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.Color;
 
-public class ventana2 extends JFrame {
+public class matrices extends JFrame {
 
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
@@ -21,7 +21,7 @@ public class ventana2 extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					ventana2 frame = new ventana2();
+					matrices frame = new matrices();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -30,7 +30,7 @@ public class ventana2 extends JFrame {
 		});
 	}
 
-	public ventana2() {
+	public matrices() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setResizable(false); 
 		this.setSize(350, 200);
@@ -53,7 +53,7 @@ public class ventana2 extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				menu v1 = new menu();
 				v1.setVisible(true);
-				ventana2.this.dispose();
+				matrices.this.dispose();
 			}
 		});
 		btnNewButton.setBounds(110, 127, 125, 23);
@@ -64,7 +64,7 @@ public class ventana2 extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				matriz2 c2 = new matriz2();
 				c2.setVisible(true);
-				ventana2.this.dispose();
+				matrices.this.dispose();
 			}
 		});
 		btnNewButton_1.setBounds(42, 60, 89, 23);
@@ -75,7 +75,7 @@ public class ventana2 extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				matriz3 m3 = new matriz3();
 				m3.setVisible(true);
-				ventana2.this.dispose();
+				matrices.this.dispose();
 			}
 		});
 		btnNewButton_2.setBounds(208, 60, 89, 23);

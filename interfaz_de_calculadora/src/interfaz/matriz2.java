@@ -11,9 +11,12 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.JTextField;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+
 import java.awt.Font;
 import javax.swing.SwingConstants;
 import java.awt.Color;
+import javax.swing.JTextArea;
 
 public class matriz2 extends JFrame {
 
@@ -25,7 +28,6 @@ public class matriz2 extends JFrame {
 	private JTextField y2;
 	private JTextField t1;
 	private JTextField t2;
-	private JTextField Res;
 
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
@@ -43,7 +45,7 @@ public class matriz2 extends JFrame {
 		setBackground(new Color(0, 255, 0));
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setResizable(false);
-		this.setSize(342, 328);
+		this.setSize(342, 372);
 		this.setLocationRelativeTo(null);
 		getContentPane().setLayout(new BorderLayout());
 		contentPane = new JPanel();
@@ -55,12 +57,12 @@ public class matriz2 extends JFrame {
 		JButton btnNewButton = new JButton("Atrás");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				ventana2 v2 = new ventana2();
+				matrices v2 = new matrices();
 				v2.setVisible(true);
 				matriz2.this.dispose();
 			}
 		});
-		btnNewButton.setBounds(207, 212, 89, 23);
+		btnNewButton.setBounds(207, 266, 89, 23);
 		contentPane.add(btnNewButton);
 		
 		JButton btnNewButton_1 = new JButton("Menú");
@@ -71,16 +73,18 @@ public class matriz2 extends JFrame {
 				matriz2.this.dispose();
 			}
 		});
-		btnNewButton_1.setBounds(23, 212, 89, 23);
+		btnNewButton_1.setBounds(23, 266, 89, 23);
 		contentPane.add(btnNewButton_1);
 		
 		x1 = new JTextField();
+		x1.setText("0");
 		x1.setHorizontalAlignment(SwingConstants.CENTER);
 		x1.setBounds(23, 60, 76, 23);
 		contentPane.add(x1);
 		x1.setColumns(10);
 		
 		x2 = new JTextField();
+		x2.setText("0");
 		x2.setHorizontalAlignment(SwingConstants.CENTER);
 		x2.setColumns(10);
 		x2.setBounds(23, 94, 76, 23);
@@ -91,24 +95,28 @@ public class matriz2 extends JFrame {
 		contentPane.add(lblNewLabel);
 		
 		y1 = new JTextField();
+		y1.setText("0");
 		y1.setHorizontalAlignment(SwingConstants.CENTER);
 		y1.setColumns(10);
 		y1.setBounds(109, 60, 76, 23);
 		contentPane.add(y1);
 		
 		y2 = new JTextField();
+		y2.setText("0");
 		y2.setHorizontalAlignment(SwingConstants.CENTER);
 		y2.setColumns(10);
 		y2.setBounds(109, 94, 76, 23);
 		contentPane.add(y2);
 		
 		t1 = new JTextField();
+		t1.setText("0");
 		t1.setHorizontalAlignment(SwingConstants.CENTER);
 		t1.setColumns(10);
 		t1.setBounds(220, 60, 76, 23);
 		contentPane.add(t1);
 		
 		t2 = new JTextField();
+		t2.setText("0");
 		t2.setHorizontalAlignment(SwingConstants.CENTER);
 		t2.setColumns(10);
 		t2.setBounds(220, 94, 76, 23);
@@ -127,24 +135,20 @@ public class matriz2 extends JFrame {
 		lblNewLabel_1.setBounds(84, 11, 185, 14);
 		contentPane.add(lblNewLabel_1);
 		
-		Res = new JTextField();
-		Res.setBackground(new Color(245, 245, 220));
+		JTextArea Res = new JTextArea();
 		Res.setEditable(false);
-		Res.setFont(new Font("Tahoma", Font.PLAIN, 15));
-		Res.setHorizontalAlignment(SwingConstants.CENTER);
-		Res.setBounds(23, 155, 273, 35);
+		Res.setBounds(23, 162, 273, 83);
 		contentPane.add(Res);
-		Res.setColumns(10);
 		
 		JButton btnNewButton_2 = new JButton("Borrar");
 		btnNewButton_2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				x1.setText("");
-				x2.setText("");
-				y1.setText("");
-				y2.setText("");
-				t1.setText("");
-				t2.setText("");
+				x1.setText("0");
+				x2.setText("0");
+				y1.setText("0");
+				y2.setText("0");
+				t1.setText("0");
+				t2.setText("0");
 				Res.setText("");
 			}
 		});
@@ -154,7 +158,8 @@ public class matriz2 extends JFrame {
 		JButton btnNewButton_3 = new JButton("Calcular");
 		btnNewButton_3.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				//x
+				try {
+					//x
 				float X1= Float.parseFloat(x1.getText());
 				float X2= Float.parseFloat(x2.getText());
 				//y
@@ -174,21 +179,28 @@ public class matriz2 extends JFrame {
 				//imprimirse en el campo de texto "Res"
 				String res = "x= "+x+"\n"+" y= "+y;
 				Res.setText(res);
+				}catch(NumberFormatException e1) {
+					JOptionPane.showMessageDialog(null, "Acción inválida");
+				}
+				
 			}
 		});
 		btnNewButton_3.setBounds(207, 128, 89, 23);
 		contentPane.add(btnNewButton_3);
 		
-		JButton btnNewButton_4 = new JButton("GUARDAR");
+		JButton btnNewButton_4 = new JButton("Info.");
 		btnNewButton_4.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				archivos ar = new archivos();
-				ar.setVisible(true);
+				info i = new info();
+				i.setVisible(true);
+				
 				
 			}
 		});
-		btnNewButton_4.setBounds(113, 255, 89, 23);
+		btnNewButton_4.setBounds(119, 299, 89, 23);
 		contentPane.add(btnNewButton_4);
+		
+		
 
 	}
 }

@@ -9,6 +9,8 @@ import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+
 import java.awt.Font;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
@@ -35,6 +37,7 @@ public class matriz3 extends JFrame {
 	private JLabel lblNewLabel_2;
 	private JLabel lblNewLabel_3;
 	private JLabel lblNewLabel_4;
+	private JButton btnNewButton_4;
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -51,7 +54,7 @@ public class matriz3 extends JFrame {
 	public matriz3() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setResizable(false);
-		this.setSize(339, 337);
+		this.setSize(339, 386);
 		this.setLocationRelativeTo(null);
 		contentPane = new JPanel();
 		contentPane.setBackground(new Color(60, 179, 113));
@@ -73,7 +76,7 @@ public class matriz3 extends JFrame {
 		JButton btnNewButton_1 = new JButton("Atrás");
 		btnNewButton_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				ventana2 v2 = new ventana2();
+				matrices v2 = new matrices();
 				v2.setVisible(true);
 				matriz3.this.dispose();
 			}
@@ -87,72 +90,84 @@ public class matriz3 extends JFrame {
 		contentPane.add(lblNewLabel);
 		
 		x1 = new JTextField();
+		x1.setText("0");
 		x1.setHorizontalAlignment(SwingConstants.CENTER);
 		x1.setBounds(10, 63, 57, 20);
 		contentPane.add(x1);
 		x1.setColumns(10);
 		
 		x2 = new JTextField();
+		x2.setText("0");
 		x2.setHorizontalAlignment(SwingConstants.CENTER);
 		x2.setColumns(10);
 		x2.setBounds(10, 94, 57, 20);
 		contentPane.add(x2);
 		
 		x3 = new JTextField();
+		x3.setText("0");
 		x3.setHorizontalAlignment(SwingConstants.CENTER);
 		x3.setColumns(10);
 		x3.setBounds(10, 125, 57, 20);
 		contentPane.add(x3);
 		
 		y1 = new JTextField();
+		y1.setText("0");
 		y1.setHorizontalAlignment(SwingConstants.CENTER);
 		y1.setColumns(10);
 		y1.setBounds(87, 63, 57, 20);
 		contentPane.add(y1);
 		
 		y2 = new JTextField();
+		y2.setText("0");
 		y2.setHorizontalAlignment(SwingConstants.CENTER);
 		y2.setColumns(10);
 		y2.setBounds(87, 94, 57, 20);
 		contentPane.add(y2);
 		
 		y3 = new JTextField();
+		y3.setText("0");
 		y3.setHorizontalAlignment(SwingConstants.CENTER);
 		y3.setColumns(10);
 		y3.setBounds(87, 125, 57, 20);
 		contentPane.add(y3);
 		
 		z1 = new JTextField();
+		z1.setText("0");
 		z1.setHorizontalAlignment(SwingConstants.CENTER);
 		z1.setColumns(10);
 		z1.setBounds(165, 63, 57, 20);
 		contentPane.add(z1);
 		
 		z2 = new JTextField();
+		z2.setText("0");
 		z2.setHorizontalAlignment(SwingConstants.CENTER);
 		z2.setColumns(10);
 		z2.setBounds(165, 94, 57, 20);
 		contentPane.add(z2);
 		
 		z3 = new JTextField();
+		z3.setText("0");
 		z3.setHorizontalAlignment(SwingConstants.CENTER);
 		z3.setColumns(10);
 		z3.setBounds(165, 125, 57, 20);
 		contentPane.add(z3);
 		
 		t1 = new JTextField();
+		t1.setText("0");
 		t1.setHorizontalAlignment(SwingConstants.CENTER);
 		t1.setColumns(10);
 		t1.setBounds(249, 63, 57, 20);
 		contentPane.add(t1);
 		
 		t2 = new JTextField();
+		t2.setText("0");
 		t2.setHorizontalAlignment(SwingConstants.CENTER);
 		t2.setColumns(10);
 		t2.setBounds(249, 94, 57, 20);
 		contentPane.add(t2);
 		
 		t3 = new JTextField();
+		t3.setText("0");
 		t3.setHorizontalAlignment(SwingConstants.CENTER);
 		t3.setColumns(10);
 		t3.setBounds(249, 125, 57, 20);
@@ -190,7 +205,8 @@ public class matriz3 extends JFrame {
 		JButton btnNewButton_3 = new JButton("Calcular");
 		btnNewButton_3.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				//x
+				try {
+					//x
 				float X1= Float.parseFloat(x1.getText());
 				float X2= Float.parseFloat(x2.getText());
 				float X3= Float.parseFloat(x3.getText());
@@ -219,6 +235,10 @@ public class matriz3 extends JFrame {
 				//imprimirse en el campo de texto "Res"
 				String res = "x= "+x+"  y= "+y+"  z= "+z;
 				Res.setText(res);
+				}catch(NumberFormatException e1) {
+					JOptionPane.showMessageDialog(null, "Acción inválida");
+				}
+				
 			}
 		});
 		btnNewButton_3.setBounds(175, 166, 89, 23);
@@ -243,6 +263,16 @@ public class matriz3 extends JFrame {
 		lblNewLabel_4.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNewLabel_4.setBounds(249, 49, 57, 14);
 		contentPane.add(lblNewLabel_4);
+		
+		btnNewButton_4 = new JButton("Info.");
+		btnNewButton_4.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				info i = new info ();
+				i.setVisible(true);
+			}
+		});
+		btnNewButton_4.setBounds(113, 298, 89, 23);
+		contentPane.add(btnNewButton_4);
 
 	}
 

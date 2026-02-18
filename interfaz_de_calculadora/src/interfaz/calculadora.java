@@ -43,16 +43,16 @@ public class calculadora extends JFrame {
 	 */
 	public calculadora() {
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-		setBounds(1000, 100, 316, 244);
+		setBounds(1000, 100, 220, 310);
 		this.setResizable(false);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JLabel lblNewLabel = new JLabel("Calculadora");
-		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		lblNewLabel.setBounds(99, 23, 95, 14);
+		JLabel lblNewLabel = new JLabel("Calculadora Básica");
+		lblNewLabel.setFont(new Font("Times New Roman", Font.PLAIN, 14));
+		lblNewLabel.setBounds(44, 21, 135, 14);
 		contentPane.add(lblNewLabel);
 		
 		a = new JTextField();
@@ -94,7 +94,7 @@ public class calculadora extends JFrame {
 				}
 			}
 		});
-		btnNewButton_1.setBounds(113, 104, 44, 23);
+		btnNewButton_1.setBounds(125, 104, 44, 23);
 		contentPane.add(btnNewButton_1);
 		
 		JButton btnNewButton_2 = new JButton("/");
@@ -133,7 +133,7 @@ public class calculadora extends JFrame {
 				}
 			}
 		});
-		btnX.setBounds(113, 138, 44, 23);
+		btnX.setBounds(125, 138, 44, 23);
 		contentPane.add(btnX);
 		
 		JButton btnNewButton_3 = new JButton("C");
@@ -144,20 +144,21 @@ public class calculadora extends JFrame {
 				c.setText("");
 			}
 		});
-		btnNewButton_3.setBounds(217, 125, 44, 23);
+		btnNewButton_3.setBounds(77, 172, 44, 23);
 		contentPane.add(btnNewButton_3);
 		
 		b = new JTextField();
 		b.setText("0");
 		b.setHorizontalAlignment(SwingConstants.RIGHT);
 		b.setColumns(10);
-		b.setBounds(113, 59, 44, 34);
+		b.setBounds(125, 59, 44, 34);
 		contentPane.add(b);
 		
 		c = new JTextField();
-		c.setHorizontalAlignment(SwingConstants.RIGHT);
+		c.setFont(new Font("Times New Roman", Font.PLAIN, 11));
+		c.setHorizontalAlignment(SwingConstants.CENTER);
 		c.setEditable(false);
-		c.setBounds(207, 79, 64, 34);
+		c.setBounds(22, 216, 157, 34);
 		contentPane.add(c);
 		c.setColumns(10);
 		

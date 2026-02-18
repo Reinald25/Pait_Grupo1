@@ -10,15 +10,13 @@ import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 import javax.swing.JComboBox;
-import javax.swing.DefaultComboBoxModel;
 import javax.swing.JButton;
-import java.awt.event.MouseWheelListener;
-import java.awt.event.MouseWheelEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.JTextArea;
 import java.awt.Font;
 import javax.swing.JScrollPane;
+import java.awt.Color;
 
 public class primer extends JFrame {
 
@@ -49,17 +47,19 @@ public class primer extends JFrame {
 	 */
 	public primer() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.setTitle("Ecuaciones de primer grado");
 		setSize(555, 374);
 		this.setLocationRelativeTo(null);
 		this.setResizable(false);
 		contentPane = new JPanel();
+		contentPane.setBackground(new Color(255, 228, 225));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
 		JLabel lblNewLabel = new JLabel("Ecuaciones de Primer Grado");
-		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		lblNewLabel.setBounds(150, 11, 193, 44);
+		lblNewLabel.setFont(new Font("Times New Roman", Font.PLAIN, 15));
+		lblNewLabel.setBounds(171, 11, 193, 44);
 		contentPane.add(lblNewLabel);
 		
 		A = new JTextField();
@@ -114,12 +114,12 @@ public class primer extends JFrame {
 		scrollPane.setBounds(29, 166, 355, 158);
 		contentPane.add(scrollPane);
 		JTextArea Respuesta = new JTextArea();
-		Respuesta.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		Respuesta.setFont(new Font("Times New Roman", Font.PLAIN, 15));
 		scrollPane.setViewportView(Respuesta);
 		Respuesta.setEditable(false);
 		
 		JButton btnNewButton = new JButton("Calcular");
-		btnNewButton.setFont(new Font("Tahoma", Font.PLAIN, 11));
+		btnNewButton.setFont(new Font("Times New Roman", Font.PLAIN, 11));
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
@@ -173,8 +173,7 @@ public class primer extends JFrame {
 		btnNewButton_1.setBounds(429, 85, 100, 23);
 		contentPane.add(btnNewButton_1);
 		JButton calcu = new JButton("Calculadora");
-		calcu.setFont(new Font("Tahoma", Font.PLAIN, 10));
-		calcu.setHorizontalAlignment(SwingConstants.LEFT);
+		calcu.setFont(new Font("Times New Roman", Font.PLAIN, 10));
 		calcu.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				calculadora cl = new calculadora();
@@ -191,9 +190,33 @@ public class primer extends JFrame {
 				i.setVisible(true);
 			}
 		});
-		btnNewButton_3.setFont(new Font("Tahoma", Font.PLAIN, 11));
+		btnNewButton_3.setFont(new Font("Times New Roman", Font.PLAIN, 11));
 		btnNewButton_3.setBounds(429, 181, 100, 23);
 		contentPane.add(btnNewButton_3);
+		
+		JButton btnNewButton_3_1 = new JButton("Atras");
+		btnNewButton_3_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Ecuaciones ec = new Ecuaciones();
+				ec.setVisible(true);
+				primer.this.dispose();
+			}
+		});
+		btnNewButton_3_1.setFont(new Font("Times New Roman", Font.PLAIN, 11));
+		btnNewButton_3_1.setBounds(429, 230, 100, 23);
+		contentPane.add(btnNewButton_3_1);
+		
+		JButton btnNewButton_3_1_1 = new JButton("Menu");
+		btnNewButton_3_1_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				menu m = new menu();
+				m.setVisible(true);
+				primer.this.dispose();
+			}
+		});
+		btnNewButton_3_1_1.setFont(new Font("Times New Roman", Font.PLAIN, 11));
+		btnNewButton_3_1_1.setBounds(429, 275, 100, 23);
+		contentPane.add(btnNewButton_3_1_1);
 		
 		
 		
