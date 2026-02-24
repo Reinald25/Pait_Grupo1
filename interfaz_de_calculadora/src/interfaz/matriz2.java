@@ -44,6 +44,7 @@ public class matriz2 extends JFrame {
 	public matriz2() {
 		setBackground(new Color(0, 255, 0));
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setTitle("Sistema 2x2");
 		this.setResizable(false);
 		this.setSize(342, 372);
 		this.setLocationRelativeTo(null);

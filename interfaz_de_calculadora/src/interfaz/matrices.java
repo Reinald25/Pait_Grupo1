@@ -32,6 +32,7 @@ public class matrices extends JFrame {
 
 	public matrices() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setTitle("Matrices");
 		this.setResizable(false); 
 		this.setSize(350, 200);
 		this.setLocationRelativeTo(null);
