@@ -49,7 +49,7 @@ public class info extends JFrame {
 	public info() {
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		this.setTitle("Información");
-		setSize(600, 348);
+		setSize(569, 300);
 		this.setLocationRelativeTo(null);
 		this.setResizable(false);
 		contentPane = new JPanel();
@@ -58,7 +58,7 @@ public class info extends JFrame {
 		contentPane.setLayout(null);
 		
 		JScrollPane scrollPane = new JScrollPane();
-		scrollPane.setBounds(10, 11, 329, 287);
+		scrollPane.setBounds(10, 11, 296, 239);
 		contentPane.add(scrollPane);
 		
 		JTextPane txtpnSeleccionarUnaOpcion = new JTextPane();
@@ -101,7 +101,7 @@ public class info extends JFrame {
 			        }
 			}
 		});
-		btnNewButton.setBounds(471, 31, 89, 23);
+		btnNewButton.setBounds(438, 31, 89, 23);
 		contentPane.add(btnNewButton);
 		
 		JButton btnNewButton_1 = new JButton("Leer");
@@ -130,7 +130,7 @@ public class info extends JFrame {
 		}
 			}
 		});
-		btnNewButton_1.setBounds(471, 65, 89, 23);
+		btnNewButton_1.setBounds(438, 65, 89, 23);
 		contentPane.add(btnNewButton_1);
 		
 		JButton btnNewButton_2 = new JButton("Leer");
@@ -139,7 +139,7 @@ public class info extends JFrame {
 			
 			public void actionPerformed(ActionEvent e) {
 				txtpnSeleccionarUnaOpcion.setText("");
-				try (FileInputStream fis = new FileInputStream("src/archivos/sistemas de ecuaciones.docx");
+				try (FileInputStream fis = new FileInputStream("src/archivos/No disponible.docx");
 			             XWPFDocument documento = new XWPFDocument(fis)) {
 			            StyledDocument doc = txtpnSeleccionarUnaOpcion.getStyledDocument();
 			            txtpnSeleccionarUnaOpcion.setText("");
@@ -161,7 +161,7 @@ public class info extends JFrame {
 			
 			}
 		});
-		btnNewButton_2.setBounds(471, 99, 89, 23);
+		btnNewButton_2.setBounds(438, 99, 89, 23);
 		contentPane.add(btnNewButton_2);
 		
 		JButton btnNewButton_3 = new JButton("Leer");
@@ -190,30 +190,24 @@ public class info extends JFrame {
 		}
 			}
 		});
-		btnNewButton_3.setBounds(471, 134, 89, 23);
+		btnNewButton_3.setBounds(438, 133, 89, 23);
 		contentPane.add(btnNewButton_3);
 		
 		JLabel lblNewLabel = new JLabel("Sobre:");
 		lblNewLabel.setFont(new Font("Times New Roman", Font.PLAIN, 14));
-		lblNewLabel.setBounds(349, 11, 83, 14);
+		lblNewLabel.setBounds(316, 6, 83, 14);
 		contentPane.add(lblNewLabel);
 		
 		JLabel lblNewLabel_1 = new JLabel("Calculadora");
 		lblNewLabel_1.setFont(new Font("Times New Roman", Font.PLAIN, 12));
-		lblNewLabel_1.setBounds(349, 35, 74, 14);
+		lblNewLabel_1.setBounds(316, 35, 74, 14);
 		contentPane.add(lblNewLabel_1);
 		
 		JLabel lblNewLabel_1_1 = new JLabel("Calculadora básica");
 		lblNewLabel_1_1.setFont(new Font("Times New Roman", Font.PLAIN, 12));
 		lblNewLabel_1_1.setHorizontalAlignment(SwingConstants.LEFT);
-		lblNewLabel_1_1.setBounds(349, 65, 112, 23);
+		lblNewLabel_1_1.setBounds(316, 65, 112, 23);
 		contentPane.add(lblNewLabel_1_1);
-		
-		JLabel lblNewLabel_1_1_1 = new JLabel("Sistema de ecuaciones");
-		lblNewLabel_1_1_1.setHorizontalAlignment(SwingConstants.LEFT);
-		lblNewLabel_1_1_1.setFont(new Font("Times New Roman", Font.PLAIN, 12));
-		lblNewLabel_1_1_1.setBounds(349, 99, 112, 23);
-		contentPane.add(lblNewLabel_1_1_1);
 		
 
 	}

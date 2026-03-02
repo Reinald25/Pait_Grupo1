@@ -6,57 +6,57 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="librerias/batik-anim-1.14.jar"/>
-	<classpathentry kind="lib" path="librerias/batik-awt-util-1.14.jar"/>
-	<classpathentry kind="lib" path="librerias/batik-bridge-1.14.jar"/>
-	<classpathentry kind="lib" path="librerias/batik-codec-1.14.jar"/>
-	<classpathentry kind="lib" path="librerias/batik-constants-1.14.jar"/>
-	<classpathentry kind="lib" path="librerias/batik-css-1.14.jar"/>
-	<classpathentry kind="lib" path="librerias/batik-dom-1.14.jar"/>
-	<classpathentry kind="lib" path="librerias/batik-ext-1.14.jar"/>
-	<classpathentry kind="lib" path="librerias/batik-gvt-1.14.jar"/>
-	<classpathentry kind="lib" path="librerias/batik-i18n-1.14.jar"/>
-	<classpathentry kind="lib" path="librerias/batik-parser-1.14.jar"/>
-	<classpathentry kind="lib" path="librerias/batik-script-1.14.jar"/>
-	<classpathentry kind="lib" path="librerias/batik-shared-resources-1.14.jar"/>
-	<classpathentry kind="lib" path="librerias/batik-svg-dom-1.14.jar"/>
-	<classpathentry kind="lib" path="librerias/batik-svggen-1.14.jar"/>
-	<classpathentry kind="lib" path="librerias/batik-svgrasterizer-1.14.jar"/>
-	<classpathentry kind="lib" path="librerias/batik-transcoder-1.14.jar"/>
-	<classpathentry kind="lib" path="librerias/batik-util-1.14.jar"/>
-	<classpathentry kind="lib" path="librerias/batik-xml-1.14.jar"/>
-	<classpathentry kind="lib" path="librerias/bcpkix-jdk15on-1.70.jar"/>
-	<classpathentry kind="lib" path="librerias/bcprov-jdk15on-1.70.jar"/>
-	<classpathentry kind="lib" path="librerias/bcutil-jdk15on-1.70.jar"/>
-	<classpathentry kind="lib" path="librerias/commons-codec-1.15.jar"/>
-	<classpathentry kind="lib" path="librerias/commons-collections4-4.4.jar"/>
-	<classpathentry kind="lib" path="librerias/commons-compress-1.21.jar"/>
-	<classpathentry kind="lib" path="librerias/commons-io-2.11.0.jar"/>
-	<classpathentry kind="lib" path="librerias/commons-logging-1.2.jar"/>
-	<classpathentry kind="lib" path="librerias/commons-math3-3.6.1.jar"/>
-	<classpathentry kind="lib" path="librerias/curvesapi-1.07.jar"/>
-	<classpathentry kind="lib" path="librerias/fontbox-2.0.26.jar"/>
-	<classpathentry kind="lib" path="librerias/graphics2d-0.40.jar"/>
-	<classpathentry kind="lib" path="librerias/jakarta.activation-2.0.1.jar"/>
-	<classpathentry kind="lib" path="librerias/jakarta.xml.bind-api-3.0.1.jar"/>
-	<classpathentry kind="lib" path="librerias/log4j-api-2.18.0.jar"/>
-	<classpathentry kind="lib" path="librerias/log4j-core-2.18.0.jar"/>
-	<classpathentry kind="lib" path="librerias/log4j-core-2.18.0-javadoc.jar"/>
-	<classpathentry kind="lib" path="librerias/pdfbox-2.0.26.jar"/>
-	<classpathentry kind="lib" path="librerias/poi-5.2.3.jar"/>
-	<classpathentry kind="lib" path="librerias/poi-examples-5.2.3.jar"/>
-	<classpathentry kind="lib" path="librerias/poi-excelant-5.2.3.jar"/>
-	<classpathentry kind="lib" path="librerias/poi-javadoc-5.2.3.jar"/>
-	<classpathentry kind="lib" path="librerias/poi-ooxml-5.2.3.jar"/>
-	<classpathentry kind="lib" path="librerias/poi-ooxml-full-5.2.3.jar"/>
-	<classpathentry kind="lib" path="librerias/poi-ooxml-lite-5.2.3.jar"/>
-	<classpathentry kind="lib" path="librerias/poi-scratchpad-5.2.3.jar"/>
-	<classpathentry kind="lib" path="librerias/slf4j-api-1.7.36.jar"/>
-	<classpathentry kind="lib" path="librerias/SparseBitSet-1.2.jar"/>
-	<classpathentry kind="lib" path="librerias/xml-apis-1.4.01.jar"/>
-	<classpathentry kind="lib" path="librerias/xml-apis-ext-1.3.04.jar"/>
-	<classpathentry kind="lib" path="librerias/xmlbeans-5.1.1.jar"/>
-	<classpathentry kind="lib" path="librerias/xmlgraphics-commons-2.6.jar"/>
-	<classpathentry kind="lib" path="librerias/xmlsec-3.0.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP PORTATIL/Desktop/Pait_Grupo1/interfaz_de_calculadora/librerias/batik-anim-1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP PORTATIL/Desktop/Pait_Grupo1/interfaz_de_calculadora/librerias/batik-awt-util-1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP PORTATIL/Desktop/Pait_Grupo1/interfaz_de_calculadora/librerias/batik-bridge-1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP PORTATIL/Desktop/Pait_Grupo1/interfaz_de_calculadora/librerias/batik-codec-1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP PORTATIL/Desktop/Pait_Grupo1/interfaz_de_calculadora/librerias/batik-constants-1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP PORTATIL/Desktop/Pait_Grupo1/interfaz_de_calculadora/librerias/batik-css-1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP PORTATIL/Desktop/Pait_Grupo1/interfaz_de_calculadora/librerias/batik-dom-1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP PORTATIL/Desktop/Pait_Grupo1/interfaz_de_calculadora/librerias/batik-ext-1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP PORTATIL/Desktop/Pait_Grupo1/interfaz_de_calculadora/librerias/batik-gvt-1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP PORTATIL/Desktop/Pait_Grupo1/interfaz_de_calculadora/librerias/batik-i18n-1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP PORTATIL/Desktop/Pait_Grupo1/interfaz_de_calculadora/librerias/batik-parser-1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP PORTATIL/Desktop/Pait_Grupo1/interfaz_de_calculadora/librerias/batik-script-1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP PORTATIL/Desktop/Pait_Grupo1/interfaz_de_calculadora/librerias/batik-shared-resources-1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP PORTATIL/Desktop/Pait_Grupo1/interfaz_de_calculadora/librerias/batik-svg-dom-1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP PORTATIL/Desktop/Pait_Grupo1/interfaz_de_calculadora/librerias/batik-svggen-1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP PORTATIL/Desktop/Pait_Grupo1/interfaz_de_calculadora/librerias/batik-svgrasterizer-1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP PORTATIL/Desktop/Pait_Grupo1/interfaz_de_calculadora/librerias/batik-transcoder-1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP PORTATIL/Desktop/Pait_Grupo1/interfaz_de_calculadora/librerias/batik-util-1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP PORTATIL/Desktop/Pait_Grupo1/interfaz_de_calculadora/librerias/batik-xml-1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP PORTATIL/Desktop/Pait_Grupo1/interfaz_de_calculadora/librerias/bcpkix-jdk15on-1.70.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP PORTATIL/Desktop/Pait_Grupo1/interfaz_de_calculadora/librerias/bcprov-jdk15on-1.70.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP PORTATIL/Desktop/Pait_Grupo1/interfaz_de_calculadora/librerias/bcutil-jdk15on-1.70.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP PORTATIL/Desktop/Pait_Grupo1/interfaz_de_calculadora/librerias/commons-codec-1.15.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP PORTATIL/Desktop/Pait_Grupo1/interfaz_de_calculadora/librerias/commons-collections4-4.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP PORTATIL/Desktop/Pait_Grupo1/interfaz_de_calculadora/librerias/commons-compress-1.21.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP PORTATIL/Desktop/Pait_Grupo1/interfaz_de_calculadora/librerias/commons-io-2.11.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP PORTATIL/Desktop/Pait_Grupo1/interfaz_de_calculadora/librerias/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP PORTATIL/Desktop/Pait_Grupo1/interfaz_de_calculadora/librerias/commons-math3-3.6.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP PORTATIL/Desktop/Pait_Grupo1/interfaz_de_calculadora/librerias/curvesapi-1.07.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP PORTATIL/Desktop/Pait_Grupo1/interfaz_de_calculadora/librerias/fontbox-2.0.26.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP PORTATIL/Desktop/Pait_Grupo1/interfaz_de_calculadora/librerias/graphics2d-0.40.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP PORTATIL/Desktop/Pait_Grupo1/interfaz_de_calculadora/librerias/jakarta.activation-2.0.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP PORTATIL/Desktop/Pait_Grupo1/interfaz_de_calculadora/librerias/jakarta.xml.bind-api-3.0.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP PORTATIL/Desktop/Pait_Grupo1/interfaz_de_calculadora/librerias/log4j-api-2.18.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP PORTATIL/Desktop/Pait_Grupo1/interfaz_de_calculadora/librerias/log4j-core-2.18.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP PORTATIL/Desktop/Pait_Grupo1/interfaz_de_calculadora/librerias/log4j-core-2.18.0-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP PORTATIL/Desktop/Pait_Grupo1/interfaz_de_calculadora/librerias/pdfbox-2.0.26.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP PORTATIL/Desktop/Pait_Grupo1/interfaz_de_calculadora/librerias/poi-5.2.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP PORTATIL/Desktop/Pait_Grupo1/interfaz_de_calculadora/librerias/poi-examples-5.2.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP PORTATIL/Desktop/Pait_Grupo1/interfaz_de_calculadora/librerias/poi-excelant-5.2.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP PORTATIL/Desktop/Pait_Grupo1/interfaz_de_calculadora/librerias/poi-javadoc-5.2.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP PORTATIL/Desktop/Pait_Grupo1/interfaz_de_calculadora/librerias/poi-ooxml-5.2.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP PORTATIL/Desktop/Pait_Grupo1/interfaz_de_calculadora/librerias/poi-ooxml-full-5.2.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP PORTATIL/Desktop/Pait_Grupo1/interfaz_de_calculadora/librerias/poi-ooxml-lite-5.2.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP PORTATIL/Desktop/Pait_Grupo1/interfaz_de_calculadora/librerias/poi-scratchpad-5.2.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP PORTATIL/Desktop/Pait_Grupo1/interfaz_de_calculadora/librerias/slf4j-api-1.7.36.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP PORTATIL/Desktop/Pait_Grupo1/interfaz_de_calculadora/librerias/SparseBitSet-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP PORTATIL/Desktop/Pait_Grupo1/interfaz_de_calculadora/librerias/xml-apis-1.4.01.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP PORTATIL/Desktop/Pait_Grupo1/interfaz_de_calculadora/librerias/xml-apis-ext-1.3.04.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP PORTATIL/Desktop/Pait_Grupo1/interfaz_de_calculadora/librerias/xmlbeans-5.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP PORTATIL/Desktop/Pait_Grupo1/interfaz_de_calculadora/librerias/xmlgraphics-commons-2.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP PORTATIL/Desktop/Pait_Grupo1/interfaz_de_calculadora/librerias/xmlsec-3.0.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -53,7 +53,6 @@ public class matriz3 extends JFrame {
 
 	public matriz3() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setTitle("Sistema 3x3");
 		this.setResizable(false);
 		this.setSize(339, 386);
 		this.setLocationRelativeTo(null);
